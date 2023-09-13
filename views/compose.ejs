@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<h1>Compose</h1>
+<form action="/addBlog" method="POST">
+    <label for="blog-title" class="blog-title fw-bold"><h4>Title</h4></label>
+    <input class="form-control blog-title" name="dailyBlog_title" placeholder="Title">
+    <label for="blog-content" class="blog-content fw-bold"><h4>Post</h4></label>
+    <textarea class="blog-body form-control" placeholder="Write your blog here..." name="dailyBlog_body" rows="8" cols="80"></textarea>
+    <input type="submit" value="Publish" class="btn btn-primary">
+</form>
+
+
+
+
+
+
+
+
+<%- include("partials/footer.ejs") %>
